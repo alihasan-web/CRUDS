@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cruds.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Motshe</title>
+</head>
+<body>
+    <div class="motshe">
+    <div class="head">
+        <h1>motshe</h1>
+        <p>product management system</p>
+    </div>
+    <div class="input">
+        <input type="text" id="title" placeholder="title">
+        <div class="pac">
+        <input type="number" id="price" onkeyup="getnumbers()" placeholder="price">
+        <input type="number" id="taxes" onkeyup="getnumbers()" placeholder="taxes">
+        <input type="number" id="ads" onkeyup="getnumbers()" placeholder="ads">
+        <input type="number" id="discount" onkeyup="getnumbers()" placeholder="discount">
+        <small id="total"></small>
+    </div>
+    <p id="messege"> pleas enter the count </p>
+    <input type="number" id="count" placeholder="count">
+    <input type="text" id="category" placeholder="category">
+    <button id="submit"> Create</button>
+    </div>
+    <div class="output">
+        <input type="text" onkeyup="searchon(this.value)" id="search" placeholder="Serche">
+        <div class="btn">
+            <button  onclick="btnsearch(this.id)" id="Stitle" >Search By Title</button>
+            <button onclick="btnsearch(this.id)" id="Scategory"  >Seaech By Category</button>
+        </div>
+        <div id="deletea">
+
+        </div>
+        <table>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>count</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>    
+    </div>
+</div>
+    <script src="cruds.js"></script> 
+</body>
+</html>
